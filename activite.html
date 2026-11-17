@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- HEADER/NAVBAR -->
+    <header class="w-full border-b border-gray-200 bg-white ">
+        <nav aria-label="Main"
+            class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-8 gap-y-3 px-5 py-3">
+            <a href="index.html" class="flex items-center gap-2 text-base font-bold text-slate-900 italic ">
+                <span
+                    class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-700 text-sm text-white">W/L</span>
+                WakeLap
+            </a>
+            <ul class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-slate-600">
+                <li><a href="index.html" aria-current="page" class="text-blue-700">Home</a></li>
+                <li><a href="activite.html" class="transition-colors hover:text-slate-900 ">Activité</a></li>
+                <li><a href="#" class="transition-colors hover:text-slate-900 ">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flex flex-col gap-2 pl-10 pt-10">
+            <p class="mb-1 text-[.7rem] font-extrabold uppercase tracking-[.2em] text-blue-700">Construction</p>
+            <h2 class="text-2xl font-black tracking-tight sm:text-3xl">Crée une Activité : </h2>
+        </div>
+        <form
+            class="max-w-3xl mx-auto py-7 px-7 mt-10 rounded-lg border outline-none border-blue-600/50 ring-2 ring-blue-50/100">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" name="floating_email" id="floating_email"
+                    class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default-medium appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
+                    placeholder=" " />
+                <label for="floating_email"
+                    class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Titre
+                    de l'activité</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="repeat_password" id="floating_repeat_password"
+                    class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default-medium appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
+                    placeholder=" " />
+                <label for="floating_repeat_password"
+                    class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Objéctifs</label>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_first_name" id="floating_first_name"
+                        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default-medium appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
+                        placeholder=" " />
+                    <label for="floating_first_name"
+                        class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Durée</label>
+                </div>
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_last_name" id="floating_last_name"
+                        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default-medium appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
+                        placeholder=" " />
+                    <label for="floating_last_name"
+                        class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Déscription</label>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="relative z-0 w-full mb-5 group">
+                    <input type="text" name="floating_last_name" id="floating_last_name"
+                        class="block py-2.5 px-0 w-full text-sm text-heading bg-transparent border-0 border-b-2 border-default-medium appearance-none focus:outline-none focus:ring-0 focus:border-blue-500 peer"
+                        placeholder=" " />
+                    <label for="floating_last_name"
+                        class="absolute text-sm text-body duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Auteur</label>
+                </div>
+                <div class="relative w-full mb-5 group">
+                    <select name="occupation" id="occupation"
+                        class="peer block w-full appearance-none bg-transparent border-0 border-b-2 border-default-medium py-2.5 pr-8 text-sm text-heading focus:outline-none focus:ring-0 focus:border-blue-500 transition-all duration-300"
+                        required>
+                        <option value="other">Autre</option>
+                        <option value="student">Jeu</option>
+                        <option value="developer">Apprentissage</option>
+                        <option value="freelancer">Exercice</option>
+                    </select>
+
+                    <label for="occupation"
+                        class="absolute left-0 top-3 -z-10 origin-left text-sm text-body transition-all duration-300 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-500 peer-valid:-translate-y-6 peer-valid:scale-75">
+                        Thémes
+                    </label>
+
+                    <div
+                        class="absolute right-0 top-3 pointer-events-none transition-transform duration-300 peer-focus:rotate-180">
+                        ▼
+                    </div>
+                </div>
+            </div>
+
+            <button
+                class="bg-blue-600 hover:bg-blue-900 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow-lg">
+                Button
+            </button>
+
+        </form>
+
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
